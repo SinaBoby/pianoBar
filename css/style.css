@@ -3,11 +3,11 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: perpetua;
 }
 
 a {
   text-decoration: none;
+  color: #F2C572;
 }
 
 li {
@@ -21,6 +21,8 @@ header {
   width: 100%;
   background: radial-gradient(50% 11733.82% at 50% 0%, rgba(17, 191, 159, 0.48) 0%, rgba(3, 136, 166, 0.96) 100%);
   color: #F2C572;
+  -webkit-box-shadow: 0px 8px 9px rgba(3, 136, 166, 0.35);
+          box-shadow: 0px 8px 9px rgba(3, 136, 166, 0.35);
 }
 
 header .container {
@@ -35,6 +37,10 @@ header .container {
           flex-direction: column;
 }
 
+header .container a {
+  color: #053362;
+}
+
 header .container .nav-up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,9 +50,58 @@ header .container .nav-up {
           justify-content: space-between;
 }
 
-header .container .nav-up .logo {
-  font-size: 36px;
-  font-family: 'Lato', sans-serif;
+header .container .nav-up .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .nav-up #search {
+  border: 1px solid #053362;
+  border-radius: 30px;
+  text-align: center;
+  padding: 2px 0;
+  margin: 5px;
+}
+
+header .container .nav-up .social-i {
+  font-size: 30px;
+  margin: 2px auto;
+  color: #053362;
+}
+
+header .container .nav-up .logo img {
+  margin: 2px;
+}
+
+header .container .right-nav {
+  font-size: 18px;
+}
+
+header .container .right-nav-icon {
+  font-size: 30px;
+  margin: 2px auto;
+}
+
+header .container .right-nav .login,
+header .container .right-nav .shopping-card {
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .container .nav-down {
@@ -64,8 +119,4 @@ header .container .nav-down li ul {
 
 header .container .nav-down li a:hover ~ ul {
   display: block;
-}
-
-header main {
-  background: no-repeat center/100% url("/scss/images/20210607_134537.jpg");
 }
