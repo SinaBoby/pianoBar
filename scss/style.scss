@@ -3,7 +3,7 @@
 
 a {
   text-decoration: none;
-  color: $light-color;
+  
 }
 li{
   list-style: none;
@@ -12,6 +12,7 @@ header {
   height: fit-content;
   width:100%;
   background: radial-gradient(50% 11733.82% at 50% 0%, rgba(17, 191, 159, 0.48) 0%, rgba(3, 136, 166, 0.96) 100%);
+  
   color: $light-color;
   box-shadow: 0px 8px 9px rgba(3, 136, 166, 0.35);
   .container {
@@ -50,38 +51,143 @@ header {
       }
     }
     .right-nav {
-      //display: flex;
-      //align-items: center;
-      //justify-content: space-around;
-      
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 18px;
+    
       &-icon {
         font-size: 30px;
         margin: 2px auto;
         
       }
 
-      .login ,
+      .login,
        .shopping-card{
-        padding:2px;
+        padding: 0 20px;
+        margin: auto 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content:space-between;
+        
       }
+      .login{
+        display: inline-block;
+        justify-content: space-between;
+      }
+       
     }
+    
+    
+
     .nav-down {
       display: flex;
       justify-content: space-evenly;
+      text-align: center;
+      
+      
+      
+      
+      li {
+
+        
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        
+        a {
+         
+          padding: 10px;
+        }
+        
+      }
 
       li ul {
         display:none;
+        border-top: 1px solid $dark-color;
+        border-radius: 10px 10px 0 0;
+        width: 200px;
+        text-align: center;
+        
+        
+        
+
+
+        li {
+          color: $dark-color;
+          padding: 10px 0;
+          width: 100%;
+          border:1px solid $dark-color;
+          
+          
+
+          &:first-child {
+            padding-top: 10px;
+            border-radius: 10px 10px 0 0;
+          }
+
+          &:last-child {
+            border-radius: 0 0 10px 10px;
+          }
+        }
+        
       }
-      li a:hover ~ ul {
+
+      &:hover li ul {
         display: block;
       }
+      
     }
     
   }
   
 
 }
+
+
+.card-container {
+  border: 1px solid black;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px 15px ;
+  .card {
+    
+    h2 {
+      padding: 5px 0;
+    }
+    .text {
+      height: 35px;
+      border-radius: 5px;
+    }
+
+    .submit {
+      background-color: $dark-color;
+      color: $light-color;
+      padding: 5px;
+      border-radius: 5px;
+      margin-left: 5px;
+      font-size: 18px;
+    }
+    .list-item {
+      border:1px solid $dark-color;
+      padding:10px;
+      font-size:18px;
+      background: lighten($dark-green,10%);
+      &:first-child{
+        border-radius: 10px 10px 0 0;
+      }
+      
+      &:last-child {
+         border-radius:0 0 10px 10px;
+      }
+    
+    }
+
+  }
+
+
+
+}
+

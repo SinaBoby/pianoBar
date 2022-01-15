@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  <script src="./main.js"></script>
+  
 </head>
 <body> 
-  <header>
-    <div class="container">
+  <header id="header">
+    <div id="nav" class="container">
       <div class="nav-up">
        <div class="left-nav">
          <input type="search" placeholder="Search Galley" id="search">
@@ -39,8 +39,11 @@
           
        </div>
      </div>
+     
+     
      <ul class=nav-down>
-       <li class="about">
+       
+       <li class="toggle">
         <a href="#">About</a>
         <ul>
           <li>About Us</li>
@@ -50,8 +53,8 @@
         </ul> 
        </li>
 
-       <li class="webshop">
-        <a href="#" >webshop</a>
+       <li class="toggle">
+        <a id="webshop" href="#" ><span >webshop</span></a>
         <ul>
          <li>Deals</li>
          <li>New Designs</li>
@@ -60,8 +63,8 @@
          <li>Plates</li>
         </ul> 
        </li>
-       <li class="contact">
-        <a href="#">Contact Us</a>
+       <li class="toggle">
+        <a href="#">About Us</a>
          <ul>
           <li>Send An Email</li>
           <li>WhatsApp</li>
@@ -69,17 +72,36 @@
         </ul>
        </li>
       </ul>
+    
 
 
     </div>
   </header>
   <main>
-   hello
+   <div class="card-container">
+     <div id="main" class="card">
+      <h1 id="card-title" class="title">Add Item</h1>
+      <form class="form-inline mb-3">
+        <input type="text" title="submit" class="text">
+        <input type="submit" class="submit" value="submit" >
+      </form> 
+      <h2 class="title">Items</h2>
+      <ul class="Items">
+        <li class="list-item">item1</li>
+        <li class="list-item">item 2</li>
+        <li class="list-item">item 3</li>
+        <li class="list-item">item 4</li>
+        
+      </ul>
+     </div>
+   </div>
   </main>
+
   <footer>
 
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script src="./main.js"></script>
 </body>
 </html>

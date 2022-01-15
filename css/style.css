@@ -7,7 +7,6 @@
 
 a {
   text-decoration: none;
-  color: #F2C572;
 }
 
 li {
@@ -81,6 +80,15 @@ header .container .nav-up .logo img {
 }
 
 header .container .right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 18px;
 }
 
@@ -91,7 +99,8 @@ header .container .right-nav-icon {
 
 header .container .right-nav .login,
 header .container .right-nav .shopping-card {
-  padding: 2px;
+  padding: 0 20px;
+  margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +111,16 @@ header .container .right-nav .shopping-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .right-nav .login {
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .container .nav-down {
@@ -111,12 +130,89 @@ header .container .nav-down {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  text-align: center;
+}
+
+header .container .nav-down li {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .container .nav-down li a {
+  padding: 10px;
 }
 
 header .container .nav-down li ul {
   display: none;
+  border-top: 1px solid #053362;
+  border-radius: 10px 10px 0 0;
+  width: 200px;
+  text-align: center;
 }
 
-header .container .nav-down li a:hover ~ ul {
+header .container .nav-down li ul li {
+  color: #053362;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #053362;
+}
+
+header .container .nav-down li ul li:first-child {
+  padding-top: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+header .container .nav-down li ul li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+header .container .nav-down:hover li ul {
   display: block;
+}
+
+.card-container {
+  border: 1px solid black;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px 15px;
+}
+
+.card-container .card h2 {
+  padding: 5px 0;
+}
+
+.card-container .card .text {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.card-container .card .submit {
+  background-color: #053362;
+  color: #F2C572;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.card-container .card .list-item {
+  border: 1px solid #053362;
+  padding: 10px;
+  font-size: 18px;
+  background: #25b7b7;
+}
+
+.card-container .card .list-item:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-container .card .list-item:last-child {
+  border-radius: 0 0 10px 10px;
 }
