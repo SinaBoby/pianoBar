@@ -1,107 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bita Resin World</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  
-</head>
-<body> 
-  <header id="header">
-    <div id="nav" class="container">
-      <div class="nav-up">
-       <div class="left-nav">
-         <input type="search" placeholder="Search Galley" id="search">
-         <a href="#" class="social-i">
-           <ion-icon name="logo-instagram"></ion-icon></a>
-         <a href="#" class="social-i">
-           <ion-icon name="logo-facebook"></ion-icon>
-         </a>
-       </div>
-       <a href="#" class="logo"><img src="./scss/images/Bita Resin Art (1).png" alt="logo"></a>
- 
-       <div class="right-nav">
-          
-           <a href="#" class="login">
-             <p>Login</p>
-             <ion-icon name="log-in-outline" class="right-nav-icon"></ion-icon>
-           </a>
-          
-           <a href="#" class="shopping-card">
-             <p>Shopping Card</p>
-             <ion-icon name="basket-outline" class="right-nav-icon"></ion-icon>
-           </a>
-          
-       </div>
-     </div>
-     
-     
-     <ul class=nav-down>
-       
-       <li class="toggle">
-        <a href="#">About</a>
-        <ul>
-          <li>About Us</li>
-          <li>About ResinArt</li>
-          <li>Shipment Policy</li>
-          <li>self design Policy</li>
-        </ul> 
-       </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bita Resin World</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div id="nav" class="container">
+        <div class="nav-up">
+          <div class="left-nav">
+            <input type="search" placeholder="Search Galley" id="search" />
+            <div class="social">
+              <a href="#" class="social-i">
+                <ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="#" class="social-i">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <a href="#" class="logo"
+            ><img src="./scss/images/Bita Resin Art (1).png" alt="logo"
+          /></a>
 
-       <li class="toggle">
-        <a id="webshop" href="#" ><span >webshop</span></a>
-        <ul>
-         <li>Deals</li>
-         <li>New Designs</li>
-         <li>Accessories</li>
-         <li>Decoratives</li>
-         <li>Plates</li>
-        </ul> 
-       </li>
-       <li class="toggle">
-        <a href="#">About Us</a>
-         <ul>
-          <li>Send An Email</li>
-          <li>WhatsApp</li>
-          <li>Chat with Us</li>
+          <div class="right-nav">
+            <a href="#" class="login">
+              <p>Login</p>
+              <ion-icon name="log-in-outline" class="right-nav-icon"></ion-icon>
+            </a>
+
+            <a href="#" class="shopping-card">
+              <p>Card</p>
+              <ion-icon name="basket-outline" class="right-nav-icon"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <ul class="nav-down">
+          <li class="toggle">
+            <a href="#">About</a>
+            <ul>
+              <li>About Us</li>
+              <li>About ResinArt</li>
+              <li>Shipment Policy</li>
+              <li>self design Policy</li>
+            </ul>
+          </li>
+
+          <li class="toggle">
+            <a id="webshop" href="#"><span>webshop</span></a>
+            <ul>
+              <li>Deals</li>
+              <li>New Designs</li>
+              <li>Accessories</li>
+              <li>Decoratives</li>
+              <li>Plates</li>
+            </ul>
+          </li>
+          <li class="toggle">
+            <a href="#">Contact Us</a>
+            <ul>
+              <li>Send An Email</li>
+              <li>WhatsApp</li>
+              <li>Chat with Us</li>
+            </ul>
+          </li>
         </ul>
-       </li>
-      </ul>
-    
+      </div>
+    </header>
+    <main>
+      <div class="card-container">
+        <div id="main" class="card">
+          <h1 id="card-title" class="title">Add Item</h1>
+          <form class="form-inline mb-3">
+            <input
+              type="text"
+              title="add-item"
+              class="text"
+              placeholder="Add your Item"
+            />
+            <select title="select" class="form-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option></select
+            >
+            <br>
+            <label for="radio"></label>
+            <input id="radio1" type="radio" />
+            <label for="radio1">Eindhoven</label>
+            <br />
+            <input type="radio" id="radio2" />
+            <label for="radio2">Amsterdam</label>
+            <br />
+            <input type="radio" id="radio3" />
+            <label for="radio3">zaandam</label>
+            <br />
+            <input type="radio" id="radio4" />
+            <label for="radio4">rotterdam</label>
+            <br />
 
+            <input type="submit" id="submit" class="submit" value="submit" />
+          </form>
+          <h2 class="title">Items</h2>
+          <ul class="items">
+            <li class="list-item">item1</li>
+            <li class="list-item">item 2</li>
+            <li class="list-item">item 3</li>
+            <li style="color: red" class="list-item">item 4</li>
+          </ul>
+          <div id="output"></div>
+          <br />
+          <button class="btn" id="btn">click here</button>
+          <br />
+          <br />
+          <div
+            id="box"
+            style="width: 400px; height: 200px; background: #4f4f4f"
+          >
+            <h3>Hello</h3>
+          </div>
+        </div>
+      </div>
+      <button id="elem">Click me</button>
 
-    </div>
-  </header>
-  <main>
-   <div class="card-container">
-     <div id="main" class="card">
-      <h1 id="card-title" class="title">Add Item</h1>
-      <form class="form-inline mb-3">
-        <input type="text" title="submit" class="text">
-        <input type="submit" class="submit" value="submit" >
-      </form> 
-      <h2 class="title">Items</h2>
-      <ul class="Items">
-        <li class="list-item">item1</li>
-        <li class="list-item">item 2</li>
-        <li class="list-item">item 3</li>
-        <li class="list-item">item 4</li>
-        
-      </ul>
-     </div>
-   </div>
-  </main>
+<script>
+  
+</script>
+    </main>
 
-  <footer>
+    <footer></footer>
 
-  </footer>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
- <script src="./main.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
