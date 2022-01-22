@@ -5,16 +5,14 @@ function playSound(e) {
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   const keys = document.querySelectorAll('.key');
 
-  //console.log(key)
-  //console.log(audio);
   if (!audio) return; //stop the function from running
-  //console.dir(audio)
+
   audio.currentTime = 0;
   audio.play();
   key.classList.add('playing');
+
   function removeTransition(e) {
-    if (e.propertyName === 'transform') {
-      
+    if (e.propertyName !== 'transform') {
       e.target.classList.remove('playing');
     }
   }
