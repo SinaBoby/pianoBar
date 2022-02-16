@@ -1,4 +1,9 @@
-# Piano Bar
+<h1 align="center">
+Piano Bar 🎹
+</h1>
+<img src="./images/screenshot.png">
+
+---
 
 Piano keys in a single page including all music notes.
 This mini app has created as a practice for JavaScript event listeners and DOM manipulation.

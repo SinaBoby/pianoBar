@@ -39,6 +39,7 @@ function play(e) {
       e.target.classList.remove('playing');
     }
   }
+
   keys.forEach((key) => {
     key.addEventListener('transitionend', removeTransition);
   });
